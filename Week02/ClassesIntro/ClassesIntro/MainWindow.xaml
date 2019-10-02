@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClassesIntro"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="700">
+        Title="MainWindow" Height="800" Width="700">
     <StackPanel>
         <Image Source="dog.jpg" Width="700"/>
         <TextBlock>Dog Name: </TextBlock><TextBox Name="DogName"></TextBox>
+        <TextBlock>Dog Breed:</TextBlock><TextBox Name="DogBreed"></TextBox>
+        <TextBlock>Dog's Favorite Toy:</TextBlock><TextBox Name="DogFavToy"></TextBox>
         <Button Click="Bark_Button_Click">Bark</Button>
-        <Button Click="SayName_Button_Click">Say Name</Button>
+        <Button Click="SayName_Button_Click">What is my name?</Button>
+        <Button Click="SayBreed_Button_Click">What Breed am I?</Button>
+        <Button Click="SayName_Button_Click">what is my favorite toy?</Button>
     </StackPanel>
 </Window>
