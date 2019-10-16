@@ -9,12 +9,16 @@ namespace MovieApplication
 {
     class Movie
     {
-      public string Title;
-      public List<string> Actors;
-      public string Genre;
-      public double ReviewScore;
+        public string Title { get; set; }
+        //   public string Title;
+        public string Genre { get; set; }
+        //public string Genre;
+        public double ReviewScore { get; set; }
+        //public double ReviewScore;
 
-       public Movie(string title, string genre, double reviewScore)
+      public List<string> Actors;
+
+        public Movie(string title, string genre, double reviewScore)
         {
             this.Title = title;
             this.Genre = genre;
