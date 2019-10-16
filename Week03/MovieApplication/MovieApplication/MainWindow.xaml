@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid x:Name="___Title_Label_">
-        <TextBox x:Name="MovieTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="450" Margin="32,0,0,208" RenderTransformOrigin="0.5,0.5" TextChanged="MovieTitle_TextChanged" FontFamily="Malgun Gothic Semilight"/>
+        <TextBox x:Name="MovieTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="450" Margin="32,0,0,208" RenderTransformOrigin="0.5,0.5" FontFamily="Malgun Gothic Semilight"/>
         <Label x:Name="title" Content="Title:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,57,0,0"/>
         <TextBox x:Name="MovieGenre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="450" Margin="32,0,0,138" RenderTransformOrigin="0.5,0.5"/>
         <Label x:Name="genre" Content="Genre:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="32,127,0,0" RenderTransformOrigin="0.52,-0.328" Width="47"/>
