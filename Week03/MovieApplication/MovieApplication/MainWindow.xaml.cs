@@ -34,7 +34,7 @@ namespace MovieApplication
         private void submit_Click(object sender, RoutedEventArgs e)
         {
            
-            Movie submittedMovie = new Movie(MovieTitle.Text, MovieGenre.Text, Convert.ToDouble(MovieReviewScore.Text));
+            Movie submittedMovie = new Movie(MovieTitle.Text, MovieGenre.Text, Convert.ToDouble(MovieReviewScore.Text), MovieDirector.Text, Convert.ToInt32(MovieLegnth.Text), MovieamountOfWoollyBearLikeness.Text);
 
             MovieList.Add(submittedMovie);
             //submittedMovie.Title = MovieTitle.Text;
@@ -46,6 +46,9 @@ namespace MovieApplication
             MovieTitle.Clear();
             MovieGenre.Clear();
             MovieReviewScore.Clear();
+            MovieDirector.Clear();
+            MovieLegnth.Clear();
+            MovieamountOfWoollyBearLikeness.Clear();
         }
 
       /*  private void MovieListView_SelectionChanged(object sender, SelectionChangedEventArgs e)

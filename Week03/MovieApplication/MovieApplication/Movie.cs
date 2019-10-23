@@ -15,19 +15,26 @@ namespace MovieApplication
         //public string Genre;
         public double ReviewScore { get; set; }
         //public double ReviewScore;
+        public string Director { get; set; }
+        public int Legnth { get; set;}
+        public string AmountOfWoollyBearLikeness { get; set; }
+
 
       public List<string> Actors;
 
-        public Movie(string title, string genre, double reviewScore)
+        public Movie(string title, string genre, double reviewScore, string director, int legnth, string amountOfWoollyBearLikeness)
         {
             this.Title = title;
             this.Genre = genre;
             this.ReviewScore = reviewScore;
+            this.Director = director;
+            this.Legnth = legnth;
+            this.AmountOfWoollyBearLikeness = amountOfWoollyBearLikeness;
         }
 
        public void DisplayInformation()
         {
-            MessageBox.Show($"Title: {Title} \n Genre: {Genre} \n Review Score: {ReviewScore} ");
+            MessageBox.Show($"Title: {Title} \n Genre: {Genre} \n Review Score: {ReviewScore} \n Director: {Director} \n Legnth: {Legnth} \n Amount of Woolly Bear Likeness: {AmountOfWoollyBearLikeness}");
         }
     }
 }

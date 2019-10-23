@@ -5,28 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MovieApplication"
         mc:Ignorable="d"
-        Title="MainWindow" Height="456.854" Width="659.112">
+        Title="MainWindow" Height="600" Width="1000">
     <Grid x:Name="___Title_Label_">
         <Grid.RowDefinitions>
-            <RowDefinition Height="142*"/>
-            <RowDefinition Height="177*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="77*"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="MovieTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="160" Margin="64,0,0,77" RenderTransformOrigin="0.5,0.5" FontFamily="Malgun Gothic Semilight" Grid.Row="1"/>
-        <Label x:Name="title" Content="Title:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="64,105,0,0" Grid.Row="1"/>
-        <TextBox x:Name="MovieGenre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="129" Margin="247,0,0,77" RenderTransformOrigin="0.5,0.5" Grid.Row="1"/>
-        <Label x:Name="genre" Content="Genre:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="247,105,0,0" RenderTransformOrigin="0.52,-0.328" Width="47" Grid.Row="1"/>
-        <TextBox x:Name="MovieReviewScore" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="60" Margin="403,0,0,77" RenderTransformOrigin="0.5,0.5" Grid.Row="1"/>
-        <Label x:Name="reviewScore" Content="Review Score:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="392,105,0,0" Grid.Row="1"/>
-        <Button x:Name="submit" Content="Submit Movie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="519,139,0,0" Click="submit_Click" Grid.Row="1"/>
-        <ListView x:Name="MovieListView" HorizontalAlignment="Left" Height="200" Margin="64,35,0,0" VerticalAlignment="Top" Width="513" MouseDoubleClick="MovieListView_MouseDoubleClick">
+        <TextBox x:Name="MovieTitle" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="160" Margin="40,0,0,208" RenderTransformOrigin="0.5,0.5" FontFamily="Malgun Gothic Semilight" Grid.Row="2"/>
+        <Label x:Name="title" Content="Title:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,47,0,0" Grid.Row="2" Height="26" Width="35"/>
+        <TextBox x:Name="MovieGenre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="129" Margin="219,0,0,208" RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
+        <Label x:Name="genre" Content="Genre:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="219,47,0,0" RenderTransformOrigin="0.52,-0.328" Width="47" Grid.Row="2" Height="26"/>
+        <TextBox x:Name="MovieReviewScore" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="60" Margin="367,0,0,208" RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
+        <Label x:Name="reviewScore" Content="Review Score:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="367,47,0,0" Grid.Row="2" Height="26" Width="82"/>
+        <Button x:Name="submit" Content="Submit Movie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="143" Margin="611,244,0,0" Click="submit_Click" Grid.Row="2" Height="36"/>
+        <Label x:Name="director" Content="Director:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="468,47,0,0" RenderTransformOrigin="0.52,-0.328" Width="66" Grid.Row="2" Height="26"/>
+        <TextBox x:Name="MovieDirector" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="119" Margin="468,0,0,208" RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
+        <Label x:Name="legnth" Content="Legnth:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="611,47,0,0" RenderTransformOrigin="0.52,-0.328" Width="66" Grid.Row="2" Height="26"/>
+        <TextBox x:Name="MovieLegnth" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="119" Margin="611,0,0,208" RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
+        <Label x:Name="amountOfWoollyBearLiknenss" Content="Amount of Woolly Bear Likeness:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,163,0,0" RenderTransformOrigin="0.52,-0.328" Width="182" Grid.Row="2" Height="26">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.613"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="MovieamountOfWoollyBearLikeness" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="182" Margin="50,0,0,76" RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
+        <ListView x:Name="MovieListView" HorizontalAlignment="Left" Height="213" Margin="36,22,0,0" VerticalAlignment="Top" Width="807" MouseDoubleClick="MovieListView_MouseDoubleClick" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+            <ListView.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.015"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ListView.RenderTransform>
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="150" Header="Title" DisplayMemberBinding="{Binding Title}"></GridViewColumn>
                     <GridViewColumn Width="100" Header="Genre" DisplayMemberBinding="{Binding Genre}"></GridViewColumn>
                     <GridViewColumn Width="100" Header="Review Score" DisplayMemberBinding="{Binding ReviewScore}"></GridViewColumn>
-                    </GridView>
-                
+                    <GridViewColumn Width="120" Header="Director" DisplayMemberBinding="{Binding Director}"></GridViewColumn>
+                    <GridViewColumn Width="100" Header="Legnth (min)" DisplayMemberBinding="{Binding Legnth}"></GridViewColumn>
+                    <GridViewColumn Width="200" Header="Amount of Woolly Bear Likeness" DisplayMemberBinding="{Binding AmountOfWoollyBearLikeness}"></GridViewColumn>
+                </GridView>
+
             </ListView.View>
+            <TextBlock x:Name="textBlock" Height="100" TextWrapping="Wrap" Text="TextBlock" Width="100"/>
         </ListView>
     </Grid>
 </Window>
