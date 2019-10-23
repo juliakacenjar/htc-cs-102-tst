@@ -41,11 +41,23 @@ namespace MovieApplication
             //submittedMovie.Genre = MovieGenre.Text;
            // submittedMovie.ReviewScore = Convert.ToDouble(MovieReviewScore.Text);
 
-            submittedMovie.DisplayInformation();
+            //submittedMovie.DisplayInformation();
 
             MovieTitle.Clear();
             MovieGenre.Clear();
             MovieReviewScore.Clear();
+        }
+
+      /*  private void MovieListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+        */
+        private void MovieListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Movie selectedMovie = MovieListView.SelectedItem as Movie;
+
+            selectedMovie.DisplayInformation();
         }
     }
 }
