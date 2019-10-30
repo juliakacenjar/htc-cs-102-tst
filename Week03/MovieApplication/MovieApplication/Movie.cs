@@ -18,11 +18,12 @@ namespace MovieApplication
         public string Director { get; set; }
         public int Legnth { get; set;}
         public string AmountOfWoollyBearLikeness { get; set; }
+        public string MoviePoster { get; set; }
 
 
       public List<string> Actors;
 
-        public Movie(string title, string genre, double reviewScore, string director, int legnth, string amountOfWoollyBearLikeness)
+        public Movie(string title, string genre, double reviewScore, string director, int legnth, string amountOfWoollyBearLikeness, string MoviePoster)
         {
             this.Title = title;
             this.Genre = genre;
@@ -30,11 +31,12 @@ namespace MovieApplication
             this.Director = director;
             this.Legnth = legnth;
             this.AmountOfWoollyBearLikeness = amountOfWoollyBearLikeness;
+            this.MoviePoster = MoviePoster;
         }
 
        public void DisplayInformation()
         {
-            MessageBox.Show($"Title: {Title} \n Genre: {Genre} \n Review Score: {ReviewScore} \n Director: {Director} \n Legnth: {Legnth} \n Amount of Woolly Bear Likeness: {AmountOfWoollyBearLikeness}");
+            MessageBox.Show($"Title: {Title} \n Genre: {Genre} \n Review Score: {ReviewScore} \n Director: {Director} \n Legnth: {Legnth} \n Amount of Woolly Bear Likeness: {AmountOfWoollyBearLikeness} \n Movie Poster: {MoviePoster}");
         }
     }
 }

@@ -22,6 +22,7 @@ namespace MovieApplication
     public partial class MainWindow : Window
     {
         ObservableCollection<Movie> MovieList = new ObservableCollection<Movie>();
+        
 
         public MainWindow()
         {
@@ -34,7 +35,7 @@ namespace MovieApplication
         private void submit_Click(object sender, RoutedEventArgs e)
         {
            
-            Movie submittedMovie = new Movie(MovieTitle.Text, MovieGenre.Text, Convert.ToDouble(MovieReviewScore.Text), MovieDirector.Text, Convert.ToInt32(MovieLegnth.Text), MovieamountOfWoollyBearLikeness.Text);
+            Movie submittedMovie = new Movie(MovieTitle.Text, MovieGenre.Text, Convert.ToDouble(MovieReviewScore.Text), MovieDirector.Text, Convert.ToInt32(MovieLegnth.Text), MovieamountOfWoollyBearLikeness.Text, MovieMoviePoster.Text);
 
             MovieList.Add(submittedMovie);
             //submittedMovie.Title = MovieTitle.Text;
@@ -49,13 +50,9 @@ namespace MovieApplication
             MovieDirector.Clear();
             MovieLegnth.Clear();
             MovieamountOfWoollyBearLikeness.Clear();
+            MoviePoster.Clear();
         }
 
-      /*  private void MovieListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-        */
         private void MovieListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             Movie selectedMovie = MovieListView.SelectedItem as Movie;

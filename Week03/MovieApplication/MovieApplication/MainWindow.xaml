@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MovieApplication"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1000">
+        Title="MainWindow" Height="600" Width="1500">
     <Grid x:Name="___Title_Label_">
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
@@ -23,6 +23,8 @@
         <TextBox x:Name="MovieDirector" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="119" Margin="468,0,0,208" RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
         <Label x:Name="legnth" Content="Legnth:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="611,47,0,0" RenderTransformOrigin="0.52,-0.328" Width="66" Grid.Row="2" Height="26"/>
         <TextBox x:Name="MovieLegnth" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="119" Margin="611,0,0,208" RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
+        <Label x:Name="MoviePoster" Content="Movie Poster:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="310,160,0,0" RenderTransformOrigin="0.52,-0.328" Width="86" Grid.Row="2" Height="26"/>
+        <TextBox x:Name="MovieMoviePoster" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="119" Margin="293,0,0,76" RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
         <Label x:Name="amountOfWoollyBearLiknenss" Content="Amount of Woolly Bear Likeness:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,163,0,0" RenderTransformOrigin="0.52,-0.328" Width="182" Grid.Row="2" Height="26">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -34,7 +36,7 @@
             </Label.RenderTransform>
         </Label>
         <TextBox x:Name="MovieamountOfWoollyBearLikeness" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="182" Margin="50,0,0,76" RenderTransformOrigin="0.5,0.5" Grid.Row="2"/>
-        <ListView x:Name="MovieListView" HorizontalAlignment="Left" Height="213" Margin="36,22,0,0" VerticalAlignment="Top" Width="807" MouseDoubleClick="MovieListView_MouseDoubleClick" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+        <ListView x:Name="MovieListView" HorizontalAlignment="Left" Height="213" Margin="36,22,0,0" VerticalAlignment="Top" Width="1200" MouseDoubleClick="MovieListView_MouseDoubleClick" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
             <ListView.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -51,10 +53,11 @@
                     <GridViewColumn Width="120" Header="Director" DisplayMemberBinding="{Binding Director}"></GridViewColumn>
                     <GridViewColumn Width="100" Header="Legnth (min)" DisplayMemberBinding="{Binding Legnth}"></GridViewColumn>
                     <GridViewColumn Width="200" Header="Amount of Woolly Bear Likeness" DisplayMemberBinding="{Binding AmountOfWoollyBearLikeness}"></GridViewColumn>
+                    <GridViewColumn Width="200" Header="Movie Poster" DisplayMemberBinding="{Binding MoviePoster}"></GridViewColumn>
                 </GridView>
 
             </ListView.View>
-            <TextBlock x:Name="textBlock" Height="100" TextWrapping="Wrap" Text="TextBlock" Width="100"/>
+            <!--<TextBlock x:Name="textBlock" Height="100" TextWrapping="Wrap" Text="TextBlock" Width="100"/>-->
         </ListView>
     </Grid>
 </Window>
