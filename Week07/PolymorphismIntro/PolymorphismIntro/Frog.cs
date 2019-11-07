@@ -11,7 +11,7 @@ namespace PolymorphismIntro
     {
         public bool IsPoisonous;
 
-        public void Ribbit()
+        public override void Speak()
         {
             MessageBox.Show("Ribbit");
         }
