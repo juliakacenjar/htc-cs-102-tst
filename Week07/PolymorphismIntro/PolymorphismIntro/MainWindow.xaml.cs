@@ -28,13 +28,20 @@ namespace PolymorphismIntro
             InitializeComponent();
             Animals = new ObservableCollection<Animal>();
 
-            Frog frog = new PolymorphismIntro.Frog(1,"Dart",true);
-            Dog dog = new PolymorphismIntro.Dog("Labradoodle", 35, "Pax");
-            Duck duck = new PolymorphismIntro.Duck(12, "Kevin");
+            Frog frog = new PolymorphismIntro.Frog(1,"Dart",true, 20);
+            Dog dog = new PolymorphismIntro.Dog("Labradoodle", 35, "Pax", 51);
+            Duck duck = new PolymorphismIntro.Duck(12, "Kevin", 7);
+            Frog frog2 = new PolymorphismIntro.Frog(5, "Crazzy", false, 2);
+            Dog dog2 = new PolymorphismIntro.Dog("Labradoodle", 7, "Sophie", 5);
+            Duck duck2 = new PolymorphismIntro.Duck(39, "Obamuck", 500);
+
 
             Animals.Add(frog);
             Animals.Add(dog);
             Animals.Add(duck);
+            Animals.Add(frog2);
+            Animals.Add(dog2);
+            Animals.Add(duck2);
 
             lvAnimals.ItemsSource = Animals;
         }
@@ -46,6 +53,16 @@ namespace PolymorphismIntro
            foreach (Animal a in Animals)
             {
                 a.SayName();
+            }
+        }
+
+        private void LvAnimals_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Animal selectedAnimal = lvAnimals.SelectedItem as Animal;
+            Animal.CoolInformation(MessageBox.Show );
+       
+                {
+
             }
         }
     }

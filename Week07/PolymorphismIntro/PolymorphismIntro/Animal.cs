@@ -11,6 +11,7 @@ namespace PolymorphismIntro
     {
         public int Height { get; set; }
         public string Name { get; set; }
+        public int Weight { get; set; }
 
         public void SayName()
         {
@@ -19,6 +20,15 @@ namespace PolymorphismIntro
         public virtual void Speak()
         {
             MessageBox.Show("");
+        }
+        public virtual void CoolInformation()
+        {
+            MessageBox.Show("");
+        }
+
+        internal static void CoolInformation(Func<string, string, MessageBoxButton, MessageBoxImage, MessageBoxResult, MessageBoxOptions, MessageBoxResult> show)
+        {
+            throw new NotImplementedException();
         }
     }
 }

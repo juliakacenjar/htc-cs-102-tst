@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="532" Width="510">
+    <Grid>
+
+        <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Margin="168,0,0,0"/>
+        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Margin="336,0,-4,0"/>
+        <Button x:Name="button4" Content="Button" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Margin="0,168,0,0"/>
+        <Button x:Name="button7" Content="Button" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Margin="0,336,0,-3"/>
+        <Button x:Name="button6" Content="Button" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Margin="336,168,-2,0"/>
+        <Button x:Name="button5" Content="Button" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Margin="168,168,0,0"/>
+        <Button x:Name="button9" Content="Button" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Margin="336,336,-2,-3"/>
+        <Button x:Name="button8" Content="Button" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Margin="168,336,0,-3"/>
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Click="button1_Click"/>
+        <Image Source="https://st2.depositphotos.com/2899123/5947/v/950/depositphotos_59478577-stock-illustration-x-red-handwritten-letter.jpg" x:Name="Ximage1" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" RenderTransformOrigin="0.479,0.809" Margin="-237,341,0,-8"/>
+        <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Font_O.svg/1045px-Font_O.svg.png" x:Name="Oimage1" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Margin="-225,0,0,0"/>
+        <Image Source="C:\Users\User1\Downloads\S-008608x1000.jpg" x:Name="whiteimage1" HorizontalAlignment="Left" Height="168" VerticalAlignment="Top" Width="168" Margin="-237,173,0,0"/>
+
+    </Grid>
+
+</Window>
