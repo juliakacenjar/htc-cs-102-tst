@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static WpfApplication1.MainWindow;
 
 namespace WpfApplication1
 {
@@ -20,21 +21,102 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int turn;
+
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = Game;
         }
 
+        public object Game { get; private set; }
+        public int Turn { get; private set; }
 
-
-       if(  private void button1_Click(object sender, RoutedEventArgs e))
+        public enum CurrentPlayer
         {
-          
-            button1.Content = "X";
-            
+            X = 1,
+            O
         }
+        public void turnCounter()
+        {
+            {
+                turn++;
+            }
+        }
+
+
+
+
+        private void currentTurn()
+        {
+            if (turn == 1)
+            {
+                CurrentPlayer currentPlayer = CurrentPlayer.X;
+            }
+            else if (turn == 2)
+            {
+                CurrentPlayer currentPlayer = CurrentPlayer.O;
+            }
+            else if (turn == 3)
+            {
+                CurrentPlayer currentPlayer = CurrentPlayer.X;
+            }
+            else if (turn == 4)
+            {
+                CurrentPlayer currentPlayer = CurrentPlayer.O;
+            }
+            else if (turn == 5)
+            {
+                CurrentPlayer currentPlayer = CurrentPlayer.X;
+            }
+            else if (turn == 6)
+            {
+                CurrentPlayer currentPlayer = CurrentPlayer.O;
+            }
+            else if (turn == 7)
+            {
+                CurrentPlayer currentPlayer = CurrentPlayer.X;
+            }
+            else if (turn == 8)
+            {
+                CurrentPlayer currentPlayer = CurrentPlayer.O;
+            }
+            else if (turn == 9)
+            {
+                CurrentPlayer currentPlayer = CurrentPlayer.X;
+            }
+        }
+        private Dictionary<string, int> board = new Dictionary<string, int>()
+            {
+                {"TopXLeft",0},
+                {"TopXMiddle",0},
+                {"TopXRight",0},
+                {"CenterXLeft",0},
+                {"CenterXMiddle",0},
+                {"CenterXRight",0},
+                {"BottomXLeft",0},
+                {"BottomXMiddle",0},
+                {"BottomXRight",0}
+            };
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
        
 
-    }
-}
+    
+
     
